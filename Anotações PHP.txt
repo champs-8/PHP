@@ -1,0 +1,124 @@
+Super tag é usada para colocar outras linguagens.
+a ST PHP é <? php    (codigo php)    ?>
+voce poder colocar mais de um comando dentro Da ST
+
+comando echo "Ola mundo"; serve para escrever na tela. ponto e vírgula serve
+para indicar o fim do comando.
+
+
+variáveis em php começa com $ e tem que ser em minusculo
+
+
+para concatenar variáveise strings se usa o ponto final.
+
+as aspas tem que ser duplas para concatenar com elas.
+
+
+PASSANDO VALORES POR URL
+vai pegar a url, acrescentar ?no final e deifinir os valores
+
+
+
+FUNÇÕES ADICIONAIS
+abs() Valor absoluto
+pow() potenciação
+sqrt() raiz quadrada
+round() arredondamento // ate .5 arredonda para baixo, acima disso arrendonda para cima
+***pode-se trocar round por ceil para arredondar sempre para cima, e floor para baixo
+intval() parte inteira de um valor
+number_format() manipular um numero
+
+
+PHP permite referencias entre variaveis
+
+================================================= 
+OPERADORES RELACIONAIS
+> maior
+< menor
+>= maior igual
+<= menor igual
+<> != diferente
+== igual
+=== idêntico
+
+TERNÁRIO
+expressão ? valor verdadeiro : valor falso;
+
+&& and
+|| or
+xor  OU exclusivo (so é verdadeiro se os valores forem diferente, valores iguais resulta em false)
+! not
+================================================= 
+FORMULÁRIOS
+
+**escolha do method é muito importante
+
+
+get = dados por url (mais rapido e menos seguro) $_GET[''];
+post = dados por pacotes (menos rapido e pouco mais seguro) $_POST[''];
+
+action = açao pra onde os dados serao enviados.
+
+isse: se foi passado algo como parametro
+================================================= 
+ESTRUTURAS CONDICIONAIS
+
+if(assim como no javaScript)
+
+switch (escolhas)
+switch($op) {
+                case 1 :
+                    echo "escolheu 1.";
+                    break;
+                case 2 : 
+                    echo "escolheu 2.";
+                    break;
+                default :
+                    echo "erro.";
+            }
+
+<a href="javascript:history.go(-1)">Voltar</a>          (volta uma pagina no historico de navegação)
+================================================= 
+WHILE
+            $c = 1;
+            while ($c <= 10) {
+                echo "$c<br>";
+                $c++;   
+            };
+================================================= 
+DoWhile
+            $c = 1;
+            do {
+                echo "$c ";
+                $c++;
+            }while ($c <= 5);
+================================================= 
+For 
+    for($c = 1; $c <= 10; $c++ ) {
+        echo "$c";
+    };
+
+
+     for($c = 1; $c <= 10; $c++) {
+            echo "$c<br>";
+        };
+        echo "<br>";
+        for($c = 10; $c>= 1; $c--) {
+            echo "$c<br>";
+        };
+        echo "<br>";
+        for ($c = 0; $c <= 100; $c+=5) {
+            echo "$c ";
+        };
+        print "<br>";
+
+
+
+
+        for ($c = 1; $c <= 10; $c++) {
+            echo "<option value='$c'>$c</option>";
+        }; OPTIONS INTERATIVOS
+================================================= 
+
+
+
