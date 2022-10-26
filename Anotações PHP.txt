@@ -119,6 +119,58 @@ For
             echo "<option value='$c'>$c</option>";
         }; OPTIONS INTERATIVOS
 ================================================= 
+ROTINAS
+
+procedimentos nao retornam valores, funções retornam valores.
+
+    function soma($a, $b) {
+            $s = $a + $b;
+            echo "O valor da soma entre $a e $b é <span class='foco'>$s</span>.<br>";
+    };
+    soma($num1, $num2);
 
 
 
+MULTIPLOS ARGUMENTOS
+
+function somamult() {
+            $arg = func_get_args();
+            $tot = func_num_args();
+            $soma = 0;
+                for($i = 0; $i < $tot; $i++) {
+                    $soma = $soma + $arg[$i];
+                }
+                return $soma;
+        };
+        $res = somamult(2,6,5,4,8);
+================================================= 
+PARAMETROS
+
+passagem de parametros por valor, nao altera a variavel.
+
+function valor($num) {
+    echo "O valor da operação $num^2 + $num = ".$num += pow($num, 2);
+}
+
+
+passagem de parametro por referencia altera a variavel.
+
+function somar(&$num) {
+    echo "O valor da operação $num^2 + $num = ".$num += pow($num, 2); //5 ao quadrado mais 5 = 30
+};
+
+================================================= 
+INCLUDE e REQUIRE
+
+ambos incluem arquivos externos
+caso o aquivo esteja inacessivel no momento, 
+o include continua o procedimento.
+ja o require para o script.
+
+
+
+
+include_once ou require_once -> se ja tiver carregado o arquivo, nao precisa carregar de novo,
+se nao, carregue pela primeira vez
+
+================================================= 
