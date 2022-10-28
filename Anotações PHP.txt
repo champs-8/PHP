@@ -174,3 +174,48 @@ include_once ou require_once -> se ja tiver carregado o arquivo, nao precisa car
 se nao, carregue pela primeira vez
 
 ================================================= 
+MANIPULAR STRINGS 
+
+printf("O %s e o %s, estão custando R$ %.2f", $prod, $prod2, $preco);
+%d valores decimais
+%u valores decimais positivos somente
+%f numero float
+%s string
+
+
+print_r
+( [0] => 4 [1] => 8 [2] => 3 )
+sempre que quiser mostrar um array, usar uma dessas 3 maneiras
+
+
+var_expor
+( 0 => 4, 1 => 8, 2 => 3, )
+var_dump
+(mais bonito, mais informações organizadas)
+//se tratando de array
+
+
+strlen() //quantidade de letras na strings 
+
+trin() // exclui os espaços desnecessarios no inicio e no final
+
+
+str_word_count(,0)// conta quantas palavras existem numa string.
+
+explode() // passa um caractere que ao ser encontrado, vai explodir e criar uma nova posição no array.
+
+str_split //vai pegar cada letra e colocar num indice.
+
+implode ou join // preenche a junçao de palavras do array com o caractere que foi passado.
+
+strtolower // deixar tudo em minusculo
+
+strtoupper // deixa tudo em maiusculo
+
+ucfirst // primeira letra da string maiusculo
+
+ucwords //primeira letra de cada palavra maiusculo
+
+strrev //reverte todas as letras da string
+
+================================================= 
